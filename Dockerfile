@@ -12,6 +12,7 @@ RUN apt-get -yy update && apt-get -yy install curl \
     nginx \
     nodejs \
     rsyslog \
+    libpq-dev \
 && rm -rf /var/lib/apt/lists/*
 
 # Copy our nginx config to the right place
