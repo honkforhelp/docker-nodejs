@@ -13,6 +13,10 @@ RUN apt-get -yy update && apt-get -yy install curl \
     nodejs \
     rsyslog \
     libpq-dev \
+    software-properties-common \
+    python-software-properties \
+&& add-apt-repository -y ppa:fkrull/deadsnakes \
+&& apt-get -y update && apt-get -y install python2.6 \
 && rm -rf /var/lib/apt/lists/*
 
 # Copy our nginx config to the right place
