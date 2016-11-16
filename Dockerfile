@@ -23,3 +23,7 @@ ENV PORT=5000
 
 # Set the Working Directory for All Commands that Follow
 WORKDIR /app
+
+COPY start.sh bin/
+
+CMD ['sh', 'bin/start.sh']
