@@ -1,5 +1,5 @@
 # Use the Latest LTS Ubuntu Version
-FROM honkdev/common:1.0.0
+FROM honkdev/common:1.0.1
 
 MAINTAINER HONK Technologies, Inc.
 
